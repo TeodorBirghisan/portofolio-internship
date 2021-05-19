@@ -1,13 +1,17 @@
 <template>
     <div class="content-container">
+      <ContentSection/>
     </div>
 </template>
 
 <script>
+import ContentSection from './ContentSection'
 
 export default {
   name: 'Content',
-  components: {}
+  components: {
+    ContentSection
+  }
 }
 </script>
 
