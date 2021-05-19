@@ -1,16 +1,19 @@
 <template>
     <div class="sidebar-container">
       <Hobbies/>
+      <Skills/>
     </div>
 </template>
 
 <script>
 import Hobbies from './Hobbies'
+import Skills from './Skills'
 
 export default {
   name: 'Sidebar',
   components: {
-    Hobbies
+    Hobbies,
+    Skills
   },
   props: {
   }
