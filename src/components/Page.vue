@@ -1,13 +1,16 @@
 <template>
     <div class="page-container">
-        <p>PAGEEE</p>
+      <Content/>
     </div>
 </template>
 
 <script>
+import Content from './Content';
+
 export default {
   name: 'Page',
   components:{
+    Content
   },
   props: {
   }
