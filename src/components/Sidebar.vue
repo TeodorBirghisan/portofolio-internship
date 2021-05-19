@@ -1,15 +1,18 @@
 <template>
     <div class="sidebar-container">
-        <Skills/>
+      <Hobbies/>
+      <Skills/>
     </div>
 </template>
 
 <script>
+import Hobbies from './Hobbies'
 import Skills from './Skills'
 
 export default {
   name: 'Sidebar',
-  components:{
+  components: {
+    Hobbies,
     Skills
   },
   props: {
