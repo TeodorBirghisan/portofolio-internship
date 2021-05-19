@@ -1,11 +1,12 @@
 <template>
-  <div>
+  <div class="CVPage-container">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'CVPage',
+  components: '',
   props: {
   }
 }
@@ -13,4 +14,7 @@ export default {
 
 
 <style scoped>
+.CVPage-container{
+
+}
 </style>
