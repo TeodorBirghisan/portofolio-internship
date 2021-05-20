@@ -26,6 +26,8 @@ export default {
 
 <style scoped>
 .sidebar-container{
-
+  background: red;
+  width: 25%;
+  height: 100%;
 }
 </style>
