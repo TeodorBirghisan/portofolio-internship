@@ -1,5 +1,6 @@
 <template>
     <div class="page-container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, perferendis! Ducimus impedit minus nulla enim unde libero quasi distinctio et cupiditate quas, placeat quos cumque. Voluptatem illo sed totam quis?</p>
       <Header/>
       <Content/>
     </div>
@@ -22,6 +23,9 @@ export default {
 
 <style>
 .page-container{
-
+  height: 100%;
+  width: 75%;
+  background-color: blueviolet;
+  margin-left: 1rem;
 }
 </style>
