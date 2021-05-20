@@ -15,5 +15,6 @@ export default {
   width: 100%;
   height: 25%;
   background-color: yellow;
+  margin-bottom: 2rem;
 }
 </style>

@@ -2,8 +2,8 @@
   <div class="sidebar-container">
     <img id="avatar" src="../../public/avatar.png" />
     <Contact />
-    <Hobbies />
     <Skills />
+    <Hobbies />
   </div>
 </template>
 
