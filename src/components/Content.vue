@@ -1,6 +1,6 @@
 <template>
     <div class="content-container">
-      <ContentSection/>
+    <ContentSection/>
     </div>
 </template>
 
@@ -16,5 +16,11 @@ export default {
 </script>
 
 <style scoped>
-
+.content-container{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+    height: 80%;
+    background-color: brown;
+}
 </style>
