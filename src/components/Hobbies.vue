@@ -1,19 +1,16 @@
 <template>
-    <div class="hobbies-container">
-    </div>
+  <div class="hobbies-container">
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Hobbies',
-  props: {
-  }
-}
+  name: "Hobbies",
+  props: {},
+};
 </script>
 
-
 <style scoped>
-.hobbies-container{
-
+.hobbies-container {
 }
 </style>

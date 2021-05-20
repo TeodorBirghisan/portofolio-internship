@@ -11,5 +11,8 @@ export default {
 
 <style>
 .header-container {
+  width: 100%;
+  height: 20%;
+  background-color: antiquewhite;
 }
 </style>

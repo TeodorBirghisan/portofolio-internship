@@ -22,6 +22,9 @@ export default {
 
 <style>
 .page-container{
-
+  height: 100%;
+  width: 75%;
+  background-color: blueviolet;
+  margin-left: 1rem;
 }
 </style>
