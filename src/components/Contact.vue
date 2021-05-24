@@ -1,12 +1,17 @@
 <template>
-  <div class="contact-container"></div>
+  <div class="contact-container">
+    <div>{{ title }}</div>
+    <div>{{ email }}</div>
+    <div>{{ phone }}</div>
+    <div><a href='{{linkedIn}}'>LinkedIn Profile</a></div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "Contact",
   components: "",
-  props: {},
+  props: { title: String, email: String, phone: String, linkedIn: String },
 };
 </script>
 

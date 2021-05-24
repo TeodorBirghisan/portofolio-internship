@@ -5,7 +5,7 @@
     </div>
 
     <div class="sidebar-content-scrollable">
-      <Contact />
+      <Contact title="Contact" email="puchianu_alexandra@yahoo.com" phone="0749816360" linkedIn="https://www.linkedin.com/in/alexandra-puchianu-433a381b4/"/>
       <Skills />
       <Hobbies />
     </div>
