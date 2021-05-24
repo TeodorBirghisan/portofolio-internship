@@ -1,6 +1,6 @@
 <template>
     <div class="page-container">
-      <Header/>
+      <Header title="Radu Giulia" occupation="Software Developer"/>
       <Content/>
     </div>
 </template>
