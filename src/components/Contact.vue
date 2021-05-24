@@ -64,6 +64,14 @@ div {
   font-size: 0.9rem;
 }
 
+a{
+  color: #fafeff;
+}
+
+a:hover{
+  color:#32bea6;
+}
+
 .contactDetails {
   margin-bottom: 0.5rem;
 }
