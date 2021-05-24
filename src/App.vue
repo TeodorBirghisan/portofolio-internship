@@ -1,14 +1,14 @@
 <template>
-  <CVPage/>
+  <Login/>
 </template>
 
 <script>
-import CVPage from './components/CVPage.vue'
-
+//import CVPage from './components/CVPage.vue'
+import Login from './components/auth/Login';
 export default {
   name: 'App',
   components: {
-    CVPage
+    Login
   }
 }
 </script>
