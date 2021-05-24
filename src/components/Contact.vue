@@ -1,13 +1,14 @@
 <template>
   <div class="contact-container">
-    <div>{{ title }}</div>
-    <div>{{ email }}</div>
-    <div>{{ phone }}</div>
-    <div><a href='{{linkedIn}}'>LinkedIn Profile</a></div>
+    <div id="title">{{ title }}</div>
+    <div id="email"><i class="fa fa-envelope"></i>{{ email }}</div>
+    <div id="phone"><i class="fas fa-phone"></i> {{ phone }}</div>
+    <div id="linkedIn"><i class="fa fa-globe"></i>LinkedIn Profile</div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: "Contact",
   components: "",
