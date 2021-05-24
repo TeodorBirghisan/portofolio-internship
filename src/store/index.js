@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-///import din auth model
+import {auth} from './auth.module'
 
 const store = createStore({
     modules: {
