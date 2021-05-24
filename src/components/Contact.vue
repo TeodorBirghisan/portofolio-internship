@@ -5,7 +5,12 @@
     <div class="contactDetails">
       <div id="email"><i class="fa fa-envelope"></i>{{ email }}</div>
       <div id="phone"><i class="fa fa-phone"></i>{{ phone }}</div>
-      <div id="linkedIn"><i class="fa fa-globe"></i>LinkedIn Profile</div>
+      <div id="linkedIn">
+        <i class="fa fa-globe"></i>
+        <a :href="`${linkedIn}`">
+          LinkedIn Profile
+        </a>
+        </div>
     </div>
   </div>
 </template>
