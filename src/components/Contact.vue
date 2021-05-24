@@ -28,9 +28,16 @@ export default {
 
 .fa {
   font-size: 0.8rem;
-  padding-left: 0.5rem;
-  padding-right: 0.3rem;
-  width: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-left: 0.4em;
+  padding-top: 0.4em;
+  border-radius: 80%;
+  color: #273642;
+  background-color:#fafeff;
+  margin-bottom: 0.5rem;
+  margin-left: 0.7rem;
+  margin-right: 0.3rem;
 }
 
 #title {
@@ -52,7 +59,7 @@ div {
   font-size: 0.9rem;
 }
 
-.contactDetails{
+.contactDetails {
   margin-bottom: 0.5rem;
 }
 #linkedIn {
