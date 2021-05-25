@@ -6,8 +6,7 @@ const routes = [{
     component: Login
 },
 {
-    path:'/',
-    name:'CVPage',
+    path:'/user/:id',
     component:CVPage
 }];
 
