@@ -4,7 +4,7 @@
     <div class="page-container">
       <div class="scrollable-content">
         <Content title="Education"/>
-        <Content title="Hobbies"/>
+        <Content title="Experience"/>
     </div>
      
       </div>
