@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .sidebar-container {
-  background: red;
+  background: #253846;
   width: 25%;
   height: 100%;
   display: flex;
