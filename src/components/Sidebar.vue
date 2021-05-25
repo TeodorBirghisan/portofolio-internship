@@ -6,7 +6,7 @@
 
     <div class="sidebar-content-scrollable">
       <Contact title="Contact" email="puchianu_alexandra@yahoo.com" phone="0749816360" linkedIn="https://www.linkedin.com/in/alexandra-puchianu-433a381b4/"/>
-      <Skills />
+      <Skills title="Skills" skill="Angular" rating="4" />
       <Hobbies title="Hobbies" description="Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri.Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri.Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri." />
     </div>
   </div>
