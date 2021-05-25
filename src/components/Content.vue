@@ -1,5 +1,6 @@
 <template>
     <div class="content-container">
+    <h3>{{title}}</h3>
     <ContentSection 
     title="Software Developer" 
     subtitle="Principal Group" 
@@ -16,6 +17,9 @@ export default {
   name: 'Content',
   components: {
     ContentSection
+  },
+  props:{
+    title:String
   }
 }
 </script>
