@@ -1,19 +1,12 @@
 <template>
 <div id="app">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a href="/" class="navbar-brand">CV PAAGE</a>
-      <div class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <router-link v-if="currentUser" to="/user/1" class="nav-link">User</router-link>
-        </li>
-      </div>
-
       <div v-if="!currentUser" class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <router-link to="/register" class="nav-link">
              Sign Up
           </router-link>
-        </li>
+        </li> -->
         <li class="nav-item">
           <router-link to="/login" class="nav-link">
             Login
@@ -43,13 +36,15 @@ export default {
   computed:{
     currentUser(){
       return this.$store.state.auth.user;
+    },
+    userId(){
+      return this.$store.state.auth.user.id
     }
   },
   components: {
   },
   methods: {
     logOut(){
-      console.log('HEEIiio')
       this.$store.dispatch('auth/logout');
       this.$router.push('/login');
     }
@@ -63,6 +58,5 @@ export default {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
 }
 </style>
