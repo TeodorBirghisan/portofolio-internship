@@ -8,12 +8,35 @@
 <script>
 import Sidebar from './Sidebar'
 import Page from './Page';
+import UserService from '../services/user.service';
 
 export default {
   name: 'CVPage',
+  data(){
+    return {
+      content:""
+    }
+  },
+  mounted(){
+    UserService.getUserInfo().then(
+      (response) => {
+        this.content = response.data;
+      },
+      (error) => {
+        this.content = (error.response &&
+            error.response.data &&
+            error.response.data.message) ||
+          error.message ||
+          error.toString();
+      }
+    )
+  },
   components: {
     Sidebar,
     Page
+  },
+  computed:{
+    
   },
   props: {
   }
