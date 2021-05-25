@@ -1,7 +1,13 @@
 <template>
+    <div class="all-components-container">
+    <Header title="Radu Giulia" occupation="Software Developer"/>
     <div class="page-container">
-      <Header title="Radu Giulia" occupation="Software Developer"/>
-      <Content title="Education"/>
+      <div class="scrollable-content">
+        <Content title="Education"/>
+        <Content title="Hobbies"/>
+    </div>
+     
+      </div>
     </div>
 </template>
 
@@ -21,10 +27,19 @@ export default {
 </script>
 
 <style>
-.page-container{
+
+.all-components-container{
   height: 100%;
   width: 75%;
+}
+.page-container{
+  height:75%;
   background-color: blueviolet;
   margin-left: 1rem;
+  overflow: auto;
+}
+
+.scrollable-content{
+  overflow: auto;
 }
 </style>
