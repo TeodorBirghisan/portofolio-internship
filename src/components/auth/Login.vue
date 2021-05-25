@@ -59,7 +59,7 @@ export default {
   },
   created() {
     if (this.loggedIn) {
-      this.$router.push("/user/1");
+      this.$router.push("/user/"+this.$store.state.auth.user.id);
     }
   },
   methods: {
@@ -67,7 +67,7 @@ export default {
       this.loading = true;
       this.$store.dispatch("auth/login", user).then(
         () => {
-          this.$router.push("/user/1");
+          this.$router.push("/user/"+this.$store.state.auth.user.id);
         },
         (error) => {
           this.loading = false;
