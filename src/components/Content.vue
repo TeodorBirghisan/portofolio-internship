@@ -1,6 +1,32 @@
 <template>
     <div class="content-container">
-    <ContentSection/>
+    <h3 class="title">{{title}}</h3>
+    <hr class="line" size="6" width="5%">
+    <ContentSection 
+    title="Software Developer" 
+    subtitle="Principal Group" 
+    details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates."
+    location="Brasov" 
+    startDate="2020" endDate="2021"/> 
+    <ContentSection 
+    title="Software Developer" 
+    subtitle="Principal Group" 
+    details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates."
+    location="Brasov" 
+    startDate="2020" endDate="2021"/> 
+    <ContentSection 
+    title="Software Developer" 
+    subtitle="Principal Group" 
+    details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates."
+    location="Brasov" 
+    startDate="2020" endDate="2021"/> 
+    <ContentSection 
+    title="Software Developer" 
+    subtitle="Principal Group" 
+    details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates."
+    location="Brasov" 
+    startDate="2020" endDate="2021"/>
+    <hr class="line" size="3" width="95%"> 
     </div>
 </template>
 
@@ -11,17 +37,31 @@ export default {
   name: 'Content',
   components: {
     ContentSection
+  },
+  props:{
+    title:String
   }
 }
 </script>
 
 <style scoped>
+.title{
+  padding-left: 15px;
+  color: #253846;
+}
+
+.line{
+    margin-left: 15px;
+    color: black;
+    opacity: .35;
+}
+
 .content-container{
     padding-left: 1rem;
     padding-top: 1rem;
     width: 100%;
     height: 80%;
-    background-color: brown;
+    background-color: white;
     overflow: auto;
 }
  
