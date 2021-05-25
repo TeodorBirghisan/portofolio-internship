@@ -35,6 +35,7 @@ export default {
   height: auto;
   background-color:white;
   padding-right: 3rem;
+  padding-bottom: 5px;
 }
 
 .content-details{
