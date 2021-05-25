@@ -47,6 +47,7 @@ export default {
 <style scoped>
 .title{
   padding-left: 15px;
+  color: #253846;
 }
 
 .line{
