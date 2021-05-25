@@ -1,6 +1,11 @@
 <template>
     <div class="content-container">
-    <ContentSection/>
+    <ContentSection 
+    title="Software Developer" 
+    subtitle="Principal Group" 
+    details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates."
+    location="Brasov" 
+    startDate="2020" endDate="2021"/> 
     </div>
 </template>
 
