@@ -7,7 +7,7 @@
       <div id="phone"><i class="fa fa-phone"></i>{{ phone }}</div>
       <div id="linkedIn">
         <i class="fa fa-globe"></i>
-        <a :href="`${linkedIn}`">
+        <a target="_blank" :href="`${linkedIn}`">
           LinkedIn Profile
         </a>
         </div>
@@ -27,8 +27,8 @@ export default {
 .contact-container {
   width: 100%;
   height: fit-content;
-  margin-bottom: 2rem;
   color: #fafeff;
+  padding-bottom: 1rem;
 }
 
 .fa {
@@ -48,13 +48,11 @@ export default {
 #title {
   font-size: 1.2rem;
   font-weight: bold;
-  padding-left: 0.5rem;
 }
 
 hr {
   margin: 0 0;
   margin-bottom: 0.5rem;
-  margin-left: 0.5rem;
   width: 20%;
   color: #fafeff;
   opacity: 0.6;
@@ -73,9 +71,9 @@ a:hover{
 }
 
 .contactDetails {
-  margin-bottom: 0.5rem;
+
 }
 #linkedIn {
-  padding-bottom: 1rem;
+ 
 }
 </style>

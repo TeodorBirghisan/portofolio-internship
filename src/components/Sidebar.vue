@@ -6,8 +6,8 @@
 
     <div class="sidebar-content-scrollable">
       <Contact title="Contact" email="puchianu_alexandra@yahoo.com" phone="0749816360" linkedIn="https://www.linkedin.com/in/alexandra-puchianu-433a381b4/"/>
-      <Skills />
-      <Hobbies title="Hobbies" description="Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri.Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri.Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri." />
+      <Skills title="Skills" skill="Angular" rating="4" />
+      <Hobbies title="Hobbies" description="Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri.Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele." />
     </div>
   </div>
 </template>
@@ -41,6 +41,7 @@ export default {
   width: 100%;
   height: 70%;
   overflow: auto;
+  padding: 1rem;
 }
 
 .sidebar-content-scrollable::-webkit-scrollbar {
