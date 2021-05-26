@@ -3,11 +3,10 @@
     <Header title="Radu Giulia" occupation="Software Developer"/>
     <div class="page-container">
       <div class="scrollable-content">
-        <Content title="Education"/>
-        <Content title="Experience"/>
+        <Content 
+        v-for="item in userAusbildung" :key="item.type" 
+        v-bind:title="item.type.charAt(0).toUpperCase() + item.type.slice(1)"/>
     </div>
-     <h4>{{user}}</h4>
-     <h4>{{userAusbildung}}</h4>
       </div>
     </div>
 </template>
@@ -25,6 +24,9 @@ export default {
   props: {
     user: Object,
     userAusbildung: Object
+  },
+  methods:{
+
   }
 }
 </script>
