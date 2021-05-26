@@ -1,31 +1,5 @@
 <template>
-<div id="app">
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <div v-if="!currentUser" class="navbar-nav ml-auto">
-        <!-- <li class="nav-item">
-          <router-link to="/register" class="nav-link">
-             Sign Up
-          </router-link>
-        </li> -->
-        <li class="nav-item">
-          <router-link to="/login" class="nav-link">
-            Login
-          </router-link>
-        </li>
-      </div>
-
-      <div v-if="currentUser" class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" @click.prevent="logOut">
-            LogOut
-          </a>
-        </li>
-      </div>
-    </nav>
-    <div class="container">
-      <router-view />
-    </div>
-  </div>
+<router-view/>
 </template>
 
 <script>
@@ -46,7 +20,7 @@ export default {
   methods: {
     logOut(){
       this.$store.dispatch('auth/logout');
-      this.$router.push('/login');
+      this.$router.push('/');
     }
   }
 }
@@ -57,6 +31,7 @@ export default {
   height: 100vh;
   width: 100vw;
   display: flex;
+  padding: 2rem;
   flex-direction: column;
 }
 </style>
