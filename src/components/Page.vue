@@ -3,8 +3,9 @@
     <Header v-bind:firstName="getFirstName()" v-bind:lastName="getLastName()" v-bind:occupation="getOccupation()"/>
     <div class="page-container">
       <div class="scrollable-content">
-        <Content title="Education"/>
-        <Content title="Experience"/>
+        <Content 
+        v-for="item in userAusbildung" :key="item.type" 
+        v-bind:title="item.type.charAt(0).toUpperCase() + item.type.slice(1)"/>
     </div>
       </div>
     </div>
@@ -37,7 +38,6 @@ export default {
       if(this.user !== undefined)
         return this.user.occupation;
     }
-
   }
 }
 </script>
