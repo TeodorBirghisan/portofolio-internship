@@ -1,5 +1,8 @@
 <template>
   <div class="header-container">
+    <div class="logout-container">
+      <button @click="logOut">Log Out</button>
+    </div>
     <h1 class="header-title">{{title}}</h1>
     <hr size="3" width="50%" color="grey">
     <h4 class="header-subtitle text-muted">{{occupation}}</h4>
@@ -13,11 +16,17 @@ export default {
     title: String,
     occupation: String
   },
+  methods: {
+    logOut(){
+      this.$store.dispatch('auth/logout');
+      this.$router.push('/');
+    }
+  }
 };
 </script>
 
 <style>
-.header-container {
+.header-container{
   width: 100%;
   height: 20%;
   background-color: #F4F4F4;
@@ -25,6 +34,20 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.logout-container{
+  align-self: flex-end;
+  padding-right: 2rem;
+}
+
+button{
+  background-color: #F4F4F4;
+  color:rgb(53, 53, 53);
+  font-family: serif;
+  font-variant-caps:all-small-caps;
+  width: 6rem;
+  height: 2rem;
 }
 
 .header-container hr{
