@@ -1,13 +1,11 @@
 <template>
     <div class="all-components-container">
-    <Header title="Radu Giulia" occupation="Software Developer"/>
+    <Header v-bind:firstName="getFirstName()" v-bind:lastName="getLastName()" v-bind:occupation="getOccupation()"/>
     <div class="page-container">
       <div class="scrollable-content">
         <Content title="Education"/>
         <Content title="Experience"/>
     </div>
-     <h4>{{user}}</h4>
-     <h4>{{userAusbildung}}</h4>
       </div>
     </div>
 </template>
@@ -25,6 +23,21 @@ export default {
   props: {
     user: Object,
     userAusbildung: Object
+  },
+  methods:{
+    getFirstName(){
+      if(this.user !== undefined)
+        return this.user.firstName;
+    },
+    getLastName(){
+      if(this.user !== undefined)
+        return this.user.lastName;
+    },
+    getOccupation(){
+      if(this.user !== undefined)
+        return this.user.occupation;
+    }
+
   }
 }
 </script>

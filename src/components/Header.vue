@@ -3,7 +3,7 @@
     <div class="logout-container">
       <button @click="logOut">Log Out</button>
     </div>
-    <h1 class="header-title">{{title}}</h1>
+    <h1 class="header-title">{{getFullName()}}</h1>
     <hr size="3" width="50%" color="grey">
     <h4 class="header-subtitle text-muted">{{occupation}}</h4>
   </div>
@@ -13,13 +13,17 @@
 export default {
   name: "Header",
   props: {
-    title: String,
+    firstName:String,
+    lastName:String,
     occupation: String
   },
   methods: {
     logOut(){
       this.$store.dispatch('auth/logout');
       this.$router.push('/');
+    },
+    getFullName(){
+      return this.firstName + " " + this.lastName;
     }
   }
 };
