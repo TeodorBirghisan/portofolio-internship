@@ -1,7 +1,7 @@
 <template>
   <div class="CVPage-container">
     <Sidebar v-bind:user="content.user" v-bind:userSkills="content.userSkills"/>
-    <Page  v-bind:user="content.user" v-bind:userAusbildung="content.userAusbildung" />
+    <Page v-bind:user="content.user" v-bind:userAusbildung="content.userAusbildung"/>
   </div>
 </template>
 
