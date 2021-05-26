@@ -3,7 +3,10 @@
     <div class="avatar-container">
       <img id="avatar" src="../../public/avatar.png" />
     </div>
-
+    <!-- <h1>
+      {{user}}
+    </h1> -->
+    <!-- <h4>{{userSkills}}</h4> -->
     <div class="sidebar-content-scrollable">
       <Contact title="Contact" email="puchianu_alexandra@yahoo.com" phone="0749816360" linkedIn="https://www.linkedin.com/in/alexandra-puchianu-433a381b4/"/>
       <Skills title="Skills" skill="Angular" rating="4" />
@@ -24,7 +27,10 @@ export default {
     Hobbies,
     Skills,
   },
-  props: {},
+  props: {
+    user: Object,
+    userSkills: Object
+  },
 };
 </script>
 

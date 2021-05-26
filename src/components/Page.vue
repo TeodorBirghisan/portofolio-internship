@@ -6,7 +6,8 @@
         <Content title="Education"/>
         <Content title="Experience"/>
     </div>
-     
+     <h4>{{user}}</h4>
+     <h4>{{userAusbildung}}</h4>
       </div>
     </div>
 </template>
@@ -22,6 +23,8 @@ export default {
     Content
   },
   props: {
+    user: Object,
+    userAusbildung: Object
   }
 }
 </script>
