@@ -24,7 +24,7 @@ export default {
   },
   mounted(){
     if(!this.currentUser){
-      this.$router.push('/login');
+      this.$router.push('/');
     }
     else{
       UserService.getUserInfo().then(
