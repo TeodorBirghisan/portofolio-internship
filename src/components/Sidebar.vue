@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar-container">
     <div class="avatar-container">
-      <img id="avatar" src="../../public/avatar.png" />
+      <img id="avatar"  :src="getImage()"/>
     </div>
     <!-- <h1>
       {{user}}
@@ -22,6 +22,25 @@ import Skills from "./Skills";
 
 export default {
   name: "Sidebar",
+  computed:{
+    currentUser(){
+      return this.$store.state.auth.user;
+    }
+  },
+  methods:{
+    getImage(){
+      if(this.$store.state.auth.user.id === 1){
+        return require('../../public/BirghisanTeodor.jpg')
+      }
+      if(this.$store.state.auth.user.id === 2){
+        return require("");
+      }
+      if(this.$store.state.auth.user.id === 3){
+        return require("");
+      }
+    }
+    
+  },
   components: {
     Contact,
     Hobbies,
