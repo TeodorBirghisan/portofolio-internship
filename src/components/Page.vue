@@ -5,7 +5,8 @@
       <div class="scrollable-content">
         <Content 
         v-for="item in userAusbildung" :key="item.type" 
-        v-bind:title="item.type.charAt(0).toUpperCase() + item.type.slice(1)"/>
+        v-bind:title="item.type.charAt(0).toUpperCase() + item.type.slice(1)" 
+        v-bind:section="item.Details"/>
     </div>
       </div>
     </div>

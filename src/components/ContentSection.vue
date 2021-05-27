@@ -1,15 +1,15 @@
 <template>
   <div class="content-section-container">
-    <h5>{{title}}</h5>
+    <h5>{{position}}</h5>
     <hr size="3" width="40%" color="grey">
     <div class="content">
       <div class="content">
-        <h6 class="subtitle">{{subtitle}}</h6>
+        <h6 class="subtitle">{{title}}</h6>
         <h6 class="location">/ {{location}}</h6>
       </div>
-      <h6 class="interval">{{startDate}} - {{endDate}}</h6>
+      <h6 class="interval">{{startyear}} - {{endyear}}</h6>
     </div>
-    <p class="content-details">{{details}}</p>
+    <p class="content-details">{{description}}</p>
   </div>
 </template>
 
@@ -17,12 +17,12 @@
 export default {
   name: "ContentSection",
   props: {
+    position:String,
     title:String,
-    subtitle:String,
-    details:String,
-    startDate:String,
-    endDate:String,
-    location:String
+    location:String,
+    description:String,
+    startyear:Number,
+    endyear:Number
   }
 };
 </script>
