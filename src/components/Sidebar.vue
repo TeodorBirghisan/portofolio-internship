@@ -7,7 +7,7 @@
     <div class="sidebar-content-scrollable">
       <Contact title="Contact" v-bind:email="getEmail()" v-bind:phone="getPhone()" linkedIn="https://www.linkedin.com/in/alexandra-puchianu-433a381b4/"/>
       <Skills title="Skills" v-bind:userSkills="userSkills"/>
-      <Hobbies title="Hobbies" description="Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri.Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele." />
+      <Hobbies title="Hobbies" v-bind:description="getHobby()" />
     </div>
   </div>
 </template>
@@ -36,6 +36,10 @@ export default {
     getPhone(){
       if(this.user !== undefined)
         return this.user.telephone;
+    },
+    getHobby(){
+      if(this.user !== undefined)
+        return this.user.hobby;
     }
   }
 };
