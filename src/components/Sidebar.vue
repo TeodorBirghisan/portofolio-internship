@@ -5,7 +5,7 @@
     </div>
 
     <div class="sidebar-content-scrollable">
-      <Contact title="Contact" v-bind:email="getEmail()" v-bind:phone="getPhone()" linkedIn="https://www.linkedin.com/in/alexandra-puchianu-433a381b4/"/>
+      <Contact title="Contact" v-bind:email="getEmail()" v-bind:phone="getPhone()" v-bind:linkedIn="getLinkedIn()"/>
       <Skills title="Skills" v-bind:userSkills="userSkills"/>
       <Hobbies title="Hobbies" v-bind:description="getHobby()" />
     </div>
@@ -40,6 +40,10 @@ export default {
     getHobby(){
       if(this.user !== undefined)
         return this.user.hobby;
+    },
+    getLinkedIn(){
+      if(this.user !== undefined)
+        return this.user.linkedIn;
     }
   }
 };
