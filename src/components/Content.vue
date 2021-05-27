@@ -3,29 +3,14 @@
     <h3 class="title">{{title}}</h3>
     <hr class="line" size="6" width="5%">
     <ContentSection 
-    title="Software Developer" 
-    subtitle="Principal Group" 
-    details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates."
-    location="Brasov" 
-    startDate="2020" endDate="2021"/> 
-    <ContentSection 
-    title="Software Developer" 
-    subtitle="Principal Group" 
-    details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates."
-    location="Brasov" 
-    startDate="2020" endDate="2021"/> 
-    <ContentSection 
-    title="Software Developer" 
-    subtitle="Principal Group" 
-    details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates."
-    location="Brasov" 
-    startDate="2020" endDate="2021"/> 
-    <ContentSection 
-    title="Software Developer" 
-    subtitle="Principal Group" 
-    details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates corporis possimus sapiente eaque ratione incidunt voluptate aliquam placeat alias omnis. Nemo, facere. Sit, consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at accusamus perferendis doloribus, quam voluptates."
-    location="Brasov" 
-    startDate="2020" endDate="2021"/>
+      v-for="item in section" :key="item.id" 
+      v-bind:position="item.position"
+      v-bind:title="item.title" 
+      v-bind:description="item.description"
+      v-bind:location="item.location" 
+      v-bind:startyear="item.startyear" 
+      v-bind:endyear="item.endyear"
+    />
     <hr class="line" size="3" width="95%"> 
     </div>
 </template>
@@ -39,7 +24,8 @@ export default {
     ContentSection
   },
   props:{
-    title:String
+    title:String,
+    section:Object
   }
 }
 </script>
