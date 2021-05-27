@@ -3,9 +3,10 @@
     <div class="avatar-container">
       <img id="avatar" src="../../public/avatar.png" />
     </div>
+
     <div class="sidebar-content-scrollable">
       <Contact title="Contact" v-bind:email="getEmail()" v-bind:phone="getPhone()" linkedIn="https://www.linkedin.com/in/alexandra-puchianu-433a381b4/"/>
-      <Skills title="Skills" skill="Angular" rating="4" />
+      <Skills title="Skills" v-bind:userSkills="userSkills"/>
       <Hobbies title="Hobbies" description="Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri.Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele." />
     </div>
   </div>
