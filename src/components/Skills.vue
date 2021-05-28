@@ -27,7 +27,12 @@
 <script>
 export default {
   name: "Skills",
-  props: { title: String, skill: String, rating: String },
+  props: { 
+    title: String, 
+    skill: String, 
+    rating: String, 
+    userSkills: Object,
+  },
 };
 </script>
 

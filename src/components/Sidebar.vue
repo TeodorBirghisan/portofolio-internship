@@ -3,14 +3,11 @@
     <div class="avatar-container">
       <img id="avatar" src="../../public/avatar.png" />
     </div>
-    <!-- <h1>
-      {{user}}
-    </h1> -->
-    <!-- <h4>{{userSkills}}</h4> -->
+
     <div class="sidebar-content-scrollable">
-      <Contact title="Contact" email="puchianu_alexandra@yahoo.com" phone="0749816360" linkedIn="https://www.linkedin.com/in/alexandra-puchianu-433a381b4/"/>
-      <Skills title="Skills" skill="Angular" rating="4" />
-      <Hobbies title="Hobbies" description="Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele. Imi plac mai multe lucruri.Imi place sa ma dau cu bicicleta, poate da, poate nu, nu stiu si altele." />
+      <Contact title="Contact" v-bind:email="getEmail()" v-bind:phone="getPhone()" v-bind:linkedIn="getLinkedIn()"/>
+      <Skills title="Skills" v-bind:userSkills="userSkills"/>
+      <Hobbies title="Hobbies" v-bind:description="getHobby()" />
     </div>
   </div>
 </template>
@@ -31,6 +28,24 @@ export default {
     user: Object,
     userSkills: Object
   },
+  methods:{
+    getEmail(){
+      if(this.user !== undefined)
+        return this.user.email;
+    },
+    getPhone(){
+      if(this.user !== undefined)
+        return this.user.telephone;
+    },
+    getHobby(){
+      if(this.user !== undefined)
+        return this.user.hobby;
+    },
+    getLinkedIn(){
+      if(this.user !== undefined)
+        return this.user.linkedIn;
+    }
+  }
 };
 </script>
 
