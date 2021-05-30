@@ -58,4 +58,20 @@ export default {
 .scrollable-content{
   overflow: auto;
 }
+ 
+.page-container::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.page-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.page-container::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+ 
+.page-container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 </style>

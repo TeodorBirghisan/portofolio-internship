@@ -50,20 +50,5 @@ export default {
     background-color: white;
     overflow: auto;
 }
- 
-.content-container::-webkit-scrollbar {
-    width: 10px;
-}
- 
-.content-container::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-.content-container::-webkit-scrollbar-thumb {
-  background: #888; 
-}
- 
-.content-container::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
+
 </style>
