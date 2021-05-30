@@ -105,6 +105,12 @@ label {
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
+.btn {
+    margin: 1rem 0.12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
 .error-feedback {
   color: red;
 }
