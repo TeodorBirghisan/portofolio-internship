@@ -51,7 +51,6 @@ export default {
 }
 .page-container{
   height:75%;
-  background-color: blueviolet;
   margin-left: 1rem;
   overflow: auto;
 }
