@@ -1,20 +1,20 @@
 <template>
   <div class="skills-container">
     <div id="title">{{ title }}</div>
-    <hr />
-    <div v-for="index in 3" :key="index" class="skill-item">
+    <hr />    
+    <div v-for="item in userSkills" :key="item.id" class="skill-item">
       <div class="skill-name">
-        <span>{{ skill }}</span>
+        <span>{{ item.skill }}</span>
       </div>
       <div class="skill-rating">
         <i
-          v-for="index in 3"
+          v-for="index in item.rating"
           :key="index"
           class="fa fa-circle"
           aria-hidden="true"
         ></i>
         <i
-          v-for="index in 2"
+          v-for="index in 5-item.rating"
           :key="index"
           class="fa fa-circle empty-circle"
           aria-hidden="true"
