@@ -27,7 +27,7 @@ export default {
       this.$router.push('/');
     }
     else{
-      UserService.getUserInfo().then(
+      UserService.getUserInfo(this.$store.state.auth.user.id).then(
         (response) => {
           this.content = response.data;
         },

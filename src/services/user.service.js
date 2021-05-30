@@ -4,8 +4,8 @@ import authHeader from './auth.header';
 const API_URL = 'http://localhost:5000/';
 
 class UserService {
-  getUserInfo() {
-    return axios.get(API_URL + 'user/1', { headers: authHeader() });
+  getUserInfo(userId) {
+    return axios.get(API_URL + 'user/'+userId, { headers: authHeader() });
   }
 }
 
