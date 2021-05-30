@@ -55,10 +55,10 @@ export default {
         return require('../../public/BirghisanTeodor.jpg')
       }
       if(this.$store.state.auth.user.id === 2){
-        return "";
+        return require("../../public/AlexandraPuchianu.jpeg");
       }
       if(this.$store.state.auth.user.id === 3){
-        return "";
+        return require("../../public/RaduGiulia.png");
       }
     }
   }
