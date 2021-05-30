@@ -32,7 +32,7 @@ export default {
 <style>
 .header-container{
   width: 100%;
-  height: 20%;
+  height: fit-content;
   background-color: #F4F4F4;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,7 @@ export default {
 .logout-container{
   align-self: flex-end;
   padding-right: 2rem;
+  padding-top: 2rem;
 }
 
 button{
